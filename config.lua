@@ -29,23 +29,108 @@ Config.RemoveScopeWithAttachTool = true -- If true, need to have a Config.ScopeA
 Config.RemoveScopeWithCommand = false
 Config.RemoveScopeCommand = "RemoveScope"
 
-Config.ScopeItems = { -- You need to add them to DB or you can just run the SQL file (Extra/scopeitems.sql)
-    WEAPON_REPEATER_WINCHESTER_SHORT = "scopeshortwinchester",
-    WEAPON_REPEATER_HENRY_SHORT = "scopeshorthenry",
-    WEAPON_REPEATER_EVANS_SHORT = "scopeshortevans",
-    WEAPON_REPEATER_CARBINE_SHORT = "scopeshortcarbine",
-    WEAPON_RIFLE_VARMINT_SHORT = "scopeshortvarmint",
-    WEAPON_RIFLE_VARMINT_MEDIUM = "scopemediumvarmint",
-    WEAPON_RIFLE_BOLTACTION_SHORT = "scopeshortboltaction",
-    WEAPON_RIFLE_BOLTACTION_MEDIM = "scopemediumboltaction",
-    WEAPON_RIFLE_SPRINGFIELD_SHORT = "scopeshortspringfield",
-    WEAPON_RIFLE_SPRINGFIELD_MEDIUM = "scopemediumspringfield",
-    WEAPON_SNIPERRIFLE_ROLLINGBLOCK_SHORT = "scopeshortrollingblock",
-    WEAPON_SNIPERRIFLE_ROLLINGBLOCK_MEDIUM = "scopemediumrollingblock",
-    WEAPON_SNIPERRIFLE_ROLLINGBLOCK_LONG = "scopelongrollingblock",
-    WEAPON_SNIPERRIFLE_CARCANO_SHORT = "scopeshortcarcano",
-    WEAPON_SNIPERRIFLE_CARCANO_MEDIUM = "scopemediumcarcano",
-    WEAPON_SNIPERRIFLE_CARCANO_LONG = "scopelongcarcano",
+Config.Weapons = {
+    WEAPON_REPEATER_WINCHESTER = {
+        SHORT = {
+            item = "scopeshortwinchester",
+            weaponHash = 0xA84762EC, -- Please Dont Change this if you dont know how it work
+            scopeHash = -404520310 -- Please Dont Change this if you dont know how it work
+        }
+    },
+    WEAPON_REPEATER_HENRY = {
+        SHORT = {
+            item = "scopeshorthenry",
+            weaponHash = 0x95B24592, -- Please Dont Change this if you dont know how it work
+            scopeHash = -404520310 -- Please Dont Change this if you dont know how it work
+        }
+    },
+    WEAPON_REPEATER_EVANS = {
+        SHORT = {
+            item = "scopeshortevans",
+            weaponHash = 0x7194721E, -- Please Dont Change this if you dont know how it work
+            scopeHash = -404520310 -- Please Dont Change this if you dont know how it work
+        }
+    },
+    WEAPON_REPEATER_CARBINE = {
+        SHORT = {
+            item = "scopeshortcarbine",
+            weaponHash = 0xF5175BA1, -- Please Dont Change this if you dont know how it work
+            scopeHash = -404520310 -- Please Dont Change this if you dont know how it work
+        }
+    },
+    WEAPON_RIFLE_VARMINT = {
+        SHORT = {
+            item = "scopeshortvarmint",
+            weaponHash = 0xDDF7BC1E, -- Please Dont Change this if you dont know how it work
+            scopeHash = -404520310 -- Please Dont Change this if you dont know how it work
+        },
+        MEDIUM = {
+            item = "scopemediumvarmint",
+            weaponHash = 0xDDF7BC1E, -- Please Dont Change this if you dont know how it work
+            scopeHash = -1844750633 -- Please Dont Change this if you dont know how it work
+
+        }
+    },
+    WEAPON_RIFLE_BOLTACTION = {
+        SHORT = {
+            item = "scopeshortboltaction",
+            weaponHash = 0x772C8DD6, -- Please Dont Change this if you dont know how it work
+            scopeHash = -404520310 -- Please Dont Change this if you dont know how it work
+        },
+        MEDIUM = {
+            item = "scopemediumboltaction",
+            weaponHash = 0x772C8DD6, -- Please Dont Change this if you dont know how it work
+            scopeHash = -1844750633 -- Please Dont Change this if you dont know how it work
+
+        }
+    },
+    WEAPON_RIFLE_SPRINGFIELD = {
+        SHORT = {
+            item = "scopeshortspringfield",
+            weaponHash = 0x63F46DE6, -- Please Dont Change this if you dont know how it work
+            scopeHash = -404520310 -- Please Dont Change this if you dont know how it work
+        },
+        MEDIUM = {
+            item = "scopemediumspringfield",
+            weaponHash = 0x63F46DE6, -- Please Dont Change this if you dont know how it work
+            scopeHash = -1844750633 -- Please Dont Change this if you dont know how it work
+
+        }
+    },
+    WEAPON_SNIPERRIFLE_ROLLINGBLOCK = {
+        SHORT = {
+            item = "scopeshortrollingblock",
+            weaponHash = 0xE1D2B317, -- Please Dont Change this if you dont know how it work
+            scopeHash = -404520310 -- Please Dont Change this if you dont know how it work
+        },
+        MEDIUM = {
+            item = "scopemediumrollingblock",
+            weaponHash = 0xE1D2B317, -- Please Dont Change this if you dont know how it work
+            scopeHash = -1844750633 -- Please Dont Change this if you dont know how it work
+        },
+        LONG = {
+            item = "scopelongrollingblock",
+            weaponHash = 0xE1D2B317, -- Please Dont Change this if you dont know how it work
+            scopeHash = -1545766277 -- Please Dont Change this if you dont know how it work
+        }
+    },
+    WEAPON_SNIPERRIFLE_CARCANO = {
+        SHORT = {
+            item = "scopeshortcarcano",
+            weaponHash = 0x53944780, -- Please Dont Change this if you dont know how it work
+            scopeHash = -404520310 -- Please Dont Change this if you dont know how it work
+        },
+        MEDIUM = {
+            item = "scopemediumcarcano",
+            weaponHash = 0x53944780, -- Please Dont Change this if you dont know how it work
+            scopeHash = -1844750633 -- Please Dont Change this if you dont know how it work
+        },
+        LONG = {
+            item = "scopelongcarcano",
+            weaponHash = 0x53944780, -- Please Dont Change this if you dont know how it work
+            scopeHash = -1545766277 -- Please Dont Change this if you dont know how it work
+        }
+    }
 }
 
 Config.Notification = {

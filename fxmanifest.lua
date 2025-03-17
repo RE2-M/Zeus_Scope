@@ -6,6 +6,10 @@ author 'Zeus Script'
 description 'Zeus Script - Zeus Scope'
 version '1.0.0'
 
+dependencies {
+    'ox_lib',
+}
+
 client_scripts {
 	'client/client.lua',
 	'client/client_standalone.lua'
